@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
     <link href="modern-normalize.min.css" rel="modern-normalize.min.css" />
-    <title>homework 3</title>
+    <title>homework 5</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
@@ -469,23 +469,89 @@
         <div class="form-container">
           <p class="form-text">Subscribe</p>
           <form class="form">
-            <label class="label">
+            <label class="label" for="email">
               <input
                 class="email-input"
                 name="email-text"
                 type="email"
-                placeholder="E-posta"
+                placeholder="E-mail"
+                id="email"
               />
             </label>
-            <button class="form-button">
+            <button class="form-button" type="submit">
               Subscribe
-              <svg class="button-svg" width="24" height="24">
-                <use href="./images/button.svg# icon-icon-send"></use>
+              <svg width="24" height="24" class="button-svg">
+                <use href="./images/send-icon.svg#icon-icon-send"></use>
               </svg>
             </button>
           </form>
         </div>
       </div>
     </footer>
+
+    <!-- MODAL PENCERE KISMI-->
+    <div class="modal-container">
+      <div class="modal">
+        <button type="button" class="modal-button">
+          <svg width="8px" height="8px" class="modal-svg">
+            <use href="./images/close.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+        <form>
+          <div class="form-div">
+            <label class="form-label">Name</label>
+            <div class="input-icon-container">
+              <input
+                class="form-input"
+                type="text"
+                id="user-name"
+                name="user-name"
+                type="text"
+              />
+              <svg class="input-icons" width="18" height="24">
+                <use
+                  href="./images/sign-icons.svg#icon-person-black-18dp-1"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-div">
+            <label class="form-label" for="user-phone">Phone</label>
+            <div class="input-icon-container">
+              <input
+                class="form-input"
+                type="text"
+                id="user-phone"
+                name="user-phone"
+                type="text"
+              />
+              <svg class="input-icons" width="18" height="24">
+                <use
+                  href="./images/sign-icons.svg#icon-phone-black-18dp-1"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-div">
+            <label class="form-label" for="user-phone"> Phone</label>
+            <div class="input-icon-container">
+              <input
+                class="form-input"
+                type="text"
+                id="user-email"
+                name="user-email"
+                type="text"
+              />
+              <svg class="input-icons" width="18" height="24">
+                <use
+                  href="./images/sign-icons.svg#icon-email-black-18dp-1"
+                ></use>
+              </svg>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
