@@ -626,6 +626,8 @@ address {
 }
 .form-input:focus + .input-icons {
   fill: #4d5ae5;
+}
+.form-input:focus {
   border-color: #4d5ae5;
 }
 .form-div-text {
@@ -649,12 +651,15 @@ address {
 .text-area:focus {
   border-color: #4d5ae5;
 }
+.checkbox-container {
+  margin-bottom: 24px;
+}
 .checkbox-input:checked + .checkbox-label > .checkbox-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
-.checkbox-input {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
