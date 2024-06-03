@@ -534,7 +534,7 @@
             </div>
           </div>
           <div class="form-div">
-            <label class="form-label" for="user-phone"> Phone</label>
+            <label class="form-label" for="user-phone"> Email</label>
             <div class="input-icon-container">
               <input
                 class="form-input"
@@ -550,6 +550,34 @@
               </svg>
             </div>
           </div>
+          <div class="form-div-text">
+            <label for="user-comment" class="form-label">Comment</label>
+            <textarea
+              class="text-area"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="checkbox-container">
+            <input
+              type="checkbox"
+              value="true"
+              id="user-privacy"
+              name="user-privacy"
+              class="checkbox-input"
+            />
+            <label for="user-privacy" class="checkbox-label">
+              <span class="checkbox-span">
+                <svg class="checkbox-svg" width="10" height="8">
+                  <use href="./images/check.svg#icon-checkmark2"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href class="privacy-link">Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" class="send-button">SEND</button>
         </form>
       </div>
     </div>
